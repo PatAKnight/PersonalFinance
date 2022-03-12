@@ -1,0 +1,57 @@
+input[type=text]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.custom{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.container{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.form-group-left{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.form-group-right{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.form-group{
+    border: 4px solid blue;
+}
+
+.form-groupt{
+    border: 4px solid green;
+}
+
+.col-left{
+    float: left;
+    width: 25%;
+    margin: 6px;
+}

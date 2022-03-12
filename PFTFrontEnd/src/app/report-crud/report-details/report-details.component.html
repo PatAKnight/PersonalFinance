@@ -1,0 +1,42 @@
+<div class="header">
+    <div class="return"><a (click)="goHome()">HOME</a></div>
+    <div class="title">{{report.month}}</div>
+</div>
+
+
+<div class="panel-body">
+    <table class="table-striped">
+        <thead class="outer-head">
+            <tr>
+                <th>Category</th>
+                <th>Transactions</th>
+            </tr>
+        </thead>
+        <tbody class="outer-body">
+            <tr *ngFor="let category of report.categories; let i = index">
+                <td>{{category.name}}</td>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>SubCategory</th>
+                            <th>Edit/Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let transaction of category.transactions; let j = index">
+                            <td>{{transaction.name}}</td>
+                            <td>{{transaction.date}}</td>
+                            <td>{{transaction.amount}}</td>
+                            <td>{{transaction.subCategory}}</td>
+                            <td><a (click)="updateTransaction(i, j)">edit</a>/<a (click)="deleteTransaction(i, j)">delete</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </tr>
+        </tbody>
+    </table>
+    <button (click)="addTransaction()" class="btn-info">Add transaction</button>
+</div>

@@ -1,0 +1,81 @@
+<h3>Start a new Transaction</h3>
+<div class="container" [hidden]="submitted">
+    <form (ngSubmit)="onSubmit()">
+
+        <div class="row">
+            <div class="form-group-left">
+                <label for="name">Name</label>
+            </div>
+            <div class="form-group-right">
+                <input type="text" class="form-control" id="name" required [(ngModel)]="transaction.name" name="name" #name="ngModel">
+                <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert">
+                    <div *ngIf="name.errors?.['required']">
+                        Name is required
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group-left">
+                <label for="date">Date</label>
+            </div>
+            <div class="form-group-right">
+                <input type="text" class="form-control" id="date" required pattern="^([0-9]|0[1-9]|1[012])[\/](0[1-9]|[12][0-9]|3[01])$" [(ngModel)]="transaction.date" name="date" #date="ngModel">
+                <div *ngIf="date.invalid && (date.dirty || date.touched)" class="alert">
+                    <div *ngIf="date.errors?.['required']">
+                        Month is required
+                    </div>
+                    <div *ngIf="date.errors?.['pattern']">
+                        Please enter a date in the format of MM/DD
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group-left">
+                <label for="amount">Amount</label>
+            </div>
+            <div class="form-group-right">
+                <input type="text" class="form-control" id="amount" required pattern="^-?(\d+)(\.\d{1,2})?$" [(ngModel)]="transaction.amount" name="amount" #amount="ngModel">
+                <div *ngIf="amount.invalid && (amount.dirty || amount.touched)" class="alert">
+                    <div *ngIf="amount.errors?.['required']">
+                        Amount is required
+                    </div>
+                    <div *ngIf="amount.errors?.['pattern']">
+                        Please enter an Amount in the form of positive or negative 0.00
+                    </div>
+                </div>            
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group-left">
+                <label for="category">Category</label>
+            </div>
+            <div class="form-group-right">
+                <select class="form-control" id="category" (change)="categoryChange($event)" required [(ngModel)]="category.name" name="category">
+                    <option *ngFor="let category of categoryList">{{category}}</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="form-group-left">
+                <label for="subCategory">Subcategory</label>
+            </div>
+            <div class="form-group-right">
+                <select class="form-control" id="subCategory" required [(ngModel)]="transaction.subCategory" name="subCategory">
+                    <option *ngFor="let subCategory of subCategoryList">{{subCategory}}</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit" class="btn-success">Submit</button>
+    </form>
+</div>
+
+<div [hidden]="!submitted">
+    <h4>You submitted successfully!</h4>
+</div>

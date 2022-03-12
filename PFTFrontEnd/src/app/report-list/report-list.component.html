@@ -1,0 +1,21 @@
+<div class="panel-body">
+    <table class="table-striped">
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Submitted Date</th>
+                <th>Amount</th>
+                <th>Edit/Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let report of reports">
+                <td><a (click)="getReport(report.id)">{{report.month}}</a></td>
+                <td>{{report.date}}</td>
+                <td>{{report.amount}}</td>
+                <td><a (click)="updateReport(report.id)">edit</a>/<a (click)="deleteReport(report.id)">delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <button (click)="addReport()" class="btn-info">Add Report</button>
+</div>
