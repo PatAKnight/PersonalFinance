@@ -48,7 +48,7 @@ npm serve
 ## Functionality
 * Create, Read, Update, Delete Reports
 * Create, Read, Update, Delete Transactions
-* Transactions are organizing  by Categories which are organizing  by Reports
+* Transactions are organized  by Categories which are organized  by Reports
      * Report -> Categories -> Transactions
 * Input Validation
      * Frontend validation to provide instant feedback to users
