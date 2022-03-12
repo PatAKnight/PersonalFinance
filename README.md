@@ -7,7 +7,7 @@ Personal Finance Tracker built with Angular, Spring Boot, and MongoDb
 * [Setup](#Setup)
 * [Functionality](#Functionality)
 * [Usage](#Usage)
-* [Future Functionaility](#FutureFunctionaility)
+* [Future Functionaility](#Future-Functionaility)
 * [Sources](#Sources)
 
 ## Introduction
