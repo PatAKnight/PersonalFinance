@@ -33,14 +33,14 @@ This project was created to learn common full stack technologies. Angular and Sp
 
 * Navigate to the Backend folder to run the backend using maven
 ```
-cd PFTBackEnd
+cd .\PersonalFinance\PFTBackEnd\
 mvn spring-boot:run
 ```
 * The backend will load on http://localhost:8080
 
 * Navigate to the Frontend folder to run the frontend using npm
 ```
-cd PFTFrontEnd
+cd .\PersonalFinance\PFTFrontEnd\
 npm serve
 ```
 * The frontend will load on http://localhost:4200
