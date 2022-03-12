@@ -29,16 +29,20 @@ This project was created to learn common full stack technologies. Angular and Sp
 
 ## Setup
 * Clone the application
-* `git clone https://github.com/SNHUPatKnight/PersonalFinance.git`
+`git clone https://github.com/SNHUPatKnight/PersonalFinance.git`
 
 * Navigate to the Backend folder to run the backend using maven
-* `cd PFTBackEnd`
-* `mvn spring-boot:run`
+```
+cd PFTBackEnd
+mvn spring-boot:run
+```
 * The backend will load on http://localhost:8080
 
 * Navigate to the Frontend folder to run the frontend using npm
-* `cd PFTFrontEnd`
-* `npm serve`
+```
+cd PFTFrontEnd
+npm serve
+```
 * The frontend will load on http://localhost:4200
 
 ## Functionality
