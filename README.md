@@ -42,8 +42,8 @@ Sources
 * Create, Read, Update, Delete Transactions
 * Transactions are organizing  by Categories which are organizing  by Reports
      * Report
-           * Categories
-                * Transactions
+              * Categories
+                           * Transactions
 * Input Validation
      * Frontend validation to provide instant feedback to users
      * Backend validation to protect data integrity
