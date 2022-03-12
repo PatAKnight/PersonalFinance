@@ -3,14 +3,6 @@ Tracking monthly expenses can be a daunting task. PersonalFinance helps to allev
 
 This project was created to learn common full stack technologies. Angular and Spring Boot are both popular technologies in software development at the moment. I wanted to gain more experience using the two so I spent a week reading up on the topics and built this project as a result. I chose finance as the topic because managing my own personal finances has always been important to me. 
 
-## Table of Contents
-Technologies
-Setup
-Functionality
-Usage
-Future Plans
-Sources
-
 ## Technologies
 ### FrontEnd
 * Angular 13.2.5
@@ -41,9 +33,7 @@ Sources
 * Create, Read, Update, Delete Reports
 * Create, Read, Update, Delete Transactions
 * Transactions are organizing  by Categories which are organizing  by Reports
-     * Report
-              * Categories
-                           * Transactions
+     * Report -> Categories -> Transactions
 * Input Validation
      * Frontend validation to provide instant feedback to users
      * Backend validation to protect data integrity
