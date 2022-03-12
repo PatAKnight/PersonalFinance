@@ -41,7 +41,7 @@ mvn spring-boot:run
 * Navigate to the Frontend folder to run the frontend using npm
 ```
 cd .\PersonalFinance\PFTFrontEnd\
-npm serve
+ng serve
 ```
 * The frontend will load on http://localhost:4200
 
