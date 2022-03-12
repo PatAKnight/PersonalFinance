@@ -1,4 +1,16 @@
 # PersonalFinance
+Personal Finance Tracker built with Angular, Spring Boot, and MongoDb
+
+## Table of Contents
+* [Introduction](#Introduction)
+* [Technologies](#Technologies)
+* [Setup](#Setup)
+* [Functionality](#Functionality)
+* [Usage](#Usage)
+* [Future Functionaility](#Future Functionaility)
+* [Sources](#Sources)
+
+## Introduction
 Tracking monthly expenses can be a daunting task. PersonalFinance helps to alleviate this problem by organizing  expenses into monthly reports. PersonalFinance aims to simplify the approach of expenditure tracking
 
 This project was created to learn common full stack technologies. Angular and Spring Boot are both popular technologies in software development at the moment. I wanted to gain more experience using the two so I spent a week reading up on the topics and built this project as a result. I chose finance as the topic because managing my own personal finances has always been important to me. 
@@ -15,7 +27,6 @@ This project was created to learn common full stack technologies. Angular and Sp
 * MongoDB 5.0.3
 
 ## Setup
-
 * Clone the application
 * `git clone https://github.com/SNHUPatKnight/PersonalFinance.git
 
@@ -39,3 +50,5 @@ This project was created to learn common full stack technologies. Angular and Sp
      * Backend validation to protect data integrity
 
 ## Usage 
+## Future Functionaility
+## Sources
