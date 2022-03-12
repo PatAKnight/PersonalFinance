@@ -23,7 +23,7 @@ This project was created to learn common full stack technologies. Angular and Sp
 ### BackEnd
 * Spring Boot 2.6.4
 * Maven 3.8.4
-* Languages used: Java
+* Language used: Java
 ### Database
 * MongoDB 5.0.3
 
