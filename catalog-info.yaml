@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: PersonalFinance
+  annotations:
+    github.com/project-slug: PatAKnight/PersonalFinance
+spec:
+  type: website
+  lifecycle: unknown
+  owner: guests
