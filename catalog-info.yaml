@@ -3,6 +3,7 @@ kind: Component
 metadata:
   name: PersonalFinance
   annotations:
+    github.com/project-slug: PatAKnight/PersonalFinance
     backstage.io/kubernetes-id: personalfinance
 spec:
   type: website
