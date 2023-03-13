@@ -5,6 +5,7 @@ metadata:
   annotations:
     github.com/project-slug: PatAKnight/PersonalFinance
     backstage.io/kubernetes-id: personalfinance
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: website
   lifecycle: unknown
