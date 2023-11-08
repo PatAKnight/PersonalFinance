@@ -9,4 +9,4 @@ metadata:
 spec:
   type: website
   lifecycle: unknown
-  owner: pataknight
+  owner: user:default/pataknight
