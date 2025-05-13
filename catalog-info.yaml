@@ -10,4 +10,4 @@ spec:
   type: website
   lifecycle: unknown
   owner: pataknight
-  scaffolderFrom: template:default/create-react-app-template-with-timestamp-entityref
+  scaffoldedFrom: template:default/create-react-app-template-with-timestamp-entityref
