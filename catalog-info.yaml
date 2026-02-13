@@ -9,5 +9,5 @@ metadata:
 spec:
   type: website
   lifecycle: unknown
-  owner: pataknight
+  owner: user:default/pataknight
   scaffoldedFrom: template:default/create-react-app-template-with-timestamp-entityref
