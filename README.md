@@ -1,4 +1,4 @@
-# PersonalFinance
+# PersonalFinance final test
 Personal Finance Tracker built with Angular, Spring Boot, and MongoDb
 
 ## Table of Contents
